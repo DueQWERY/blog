@@ -69,7 +69,7 @@
  .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 15px;  
+  padding: 0 15px;
  }
 
 .container-sm {
@@ -97,6 +97,34 @@
     color: rgb(223, 101, 1);
 }
 
+/* Posts */
+
+.hero {
+    display: flex;
+    margin: 20px auto;
+    background: aliceblue;
+    max-width: 1200px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+.hero .container {
+    padding: 20px;
+}
+
+.hero .container .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 30px;
+}
+
+.hero .container .heading p {
+    color: #4e4e4e;
+    font-size: 70%;
+    text-align: center;
+    margin: auto 0;
+}
 
 /* Buttons */
 
