@@ -38,8 +38,8 @@
     background-color: #4b8b40;
     padding: 20px;
     max-width: 1600px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .navbar .container {
@@ -72,6 +72,7 @@
   padding: 0 15px;
  }
 
+ 
 .container-sm {
     max-width: 800px;
     margin: 0 auto;
@@ -97,6 +98,39 @@
     color: rgb(223, 101, 1);
 }
 
+/* ToDo */
+
+.todo {
+    display: flex;
+    margin: 20px auto;
+    background: aliceblue;
+    max-width: 1200px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+.todo .container {
+    padding: 20px;
+    width: 100%;
+}
+
+.todo .container .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.todo .container .heading p {
+    color: #4e4e4e;
+    font-size: 70%;
+    text-align: center;
+    margin: auto 0;
+
+}
+
 /* Posts */
 
 .hero {
@@ -108,8 +142,10 @@
     text-align: left;
 }
 
+
 .hero .container {
     padding: 20px;
+    width: 100%;
 }
 
 .hero .container .heading {
@@ -117,6 +153,7 @@
     justify-content: space-between;
     align-items: left;
     padding-bottom: 30px;
+    width: 100%;
 }
 
 .hero .container .heading p {
@@ -124,6 +161,112 @@
     font-size: 70%;
     text-align: center;
     margin: auto 0;
+}
+
+.hero .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.hero .container .content img {
+    max-width: 50%;
+}
+
+/* About Me */
+
+.whoami {
+    display: flex;
+    margin: 20px auto;
+    background: aliceblue;
+    max-width: 1200px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+.whoami .container {
+    padding: 20px;
+    width: 100%;
+}
+
+.whoami .container .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+.whoami .container .heading p {
+    color: #4e4e4e;
+    font-size: 70%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.whoami .container .content .introduction {
+    display: flex;
+    align-items:left;
+    padding-bottom: 20px;
+}
+
+.whoami .container .content .introduction p {
+    margin: auto 0;
+}
+
+.whoami .container .content .introduction img {
+    max-width: 100px;
+    margin-right: 20px;
+}
+
+
+
+.projects {
+    display: flex;
+    margin: 20px auto;
+    background: aliceblue;
+    max-width: 1200px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+.projects .container {
+    padding: 20px;
+    width: 100%;
+}
+
+.projects .container .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.projects .container .heading p {
+    color: #4e4e4e;
+    font-size: 70%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.projects .container .content .project {
+    display: flex;
+    align-items:left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.projects .container .content .project p {
+    margin: auto 0;
+}
+
+.projects .container .content .project img {
+    max-width: 100px;
+    margin: auto 0;
+    margin-right: 20px;
 }
 
 /* Buttons */
