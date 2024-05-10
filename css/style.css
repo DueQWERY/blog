@@ -88,6 +88,16 @@
     align-items: center;
 }
 
+.navbar-left .page-name {
+    font-weight: 600;
+}
+
+.navbar-left .page-name span {
+    font-weight: 900;
+    color: rgb(223, 101, 1);
+}
+
+
 /* Buttons */
 
 .navbutton {
