@@ -220,7 +220,14 @@
     margin-right: 20px;
 }
 
+.whoami .container .content h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 120%;
+    color: #525252;
+}
 
+/* Projects i'm working on */
 
 .projects {
     display: flex;
@@ -267,6 +274,70 @@
     max-width: 100px;
     margin: auto 0;
     margin-right: 20px;
+}
+
+/* Contact me */
+
+.contactme {
+    display: flex;
+    margin: 20px auto;
+    background: aliceblue;
+    max-width: 1200px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+
+.contactme .container {
+    padding: 20px;
+    width: 100%;
+}
+
+.contactme .container .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.contactme .container .heading p {
+    color: #4e4e4e;
+    font-size: 70%;
+    text-align: center;
+    margin: auto 0;
+}
+
+.contactme .container .content p {
+    margin-bottom: 20px;
+}
+
+.contactme .container .content .introduction {
+    display: flex;
+    align-items:left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #313131;
+}
+
+.contactme .container .content .introduction a {
+    display: flex;
+    align-items: left;
+}
+
+.contactme .container .content .introduction p {
+    margin: auto 0
+}
+
+.contactme .container .content .introduction img {
+    max-width: 50px;
+    margin: auto 0;
+    margin-right: 20px;
+}
+
+.contactme .container .content .introduction a p {
+    color: #313131;
+    margin: auto 0;
 }
 
 /* Buttons */
