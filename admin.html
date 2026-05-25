@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Pannello Admin - Scrivi Post</title>
+    <style>
+        body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="password"], textarea { width: 100%; padding: 8px; box-sizing: border-box; }
+        textarea { height: 150px; }
+        input[type="file"] { display: block; margin-top: 5px; }
+        button { background: #3ecf8e; color: white; border: none; padding: 10px 20px; cursor: pointer; font-size: 16px; border-radius: 5px; }
+        button:hover { background: #34b279; }
+    </style>
+</head>
+<body>
+
+    <div id="login-box" style="max-width: 400px; margin: 100px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px;">
+        <h2>Accesso Amministratore</h2>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" id="login-email" placeholder="La tua email...">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="login-password" placeholder="La tua password...">
+        </div>
+        <button id="login-btn">Accedi</button>
+    </div>
+
+    <div id="admin-panel" style="display: none;">
+        <h2>Aggiungi un nuovo articolo</h2>
+        
+        <div class="form-group">
+            <label for="title">Titolo</label>
+            <input type="text" id="title" placeholder="Inserisci il titolo...">
+        </div>
+
+        <div class="form-group">
+            <label for="category">Destinazione Post</label>
+            <select id="category" style="width: 100%; padding: 8px; border-radius: 5px; font-family: inherit;">
+                <option value="blog">Home Page (Blog)</option>
+                <option value="books">Libri letti (Books)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="image">Immagine di Copertina</label>
+            <input type="file" id="image" accept="image/*">
+        </div>
+
+        <div class="form-group">
+            <label for="content">Contenuto</label>
+            <textarea id="content" placeholder="Scrivi il tuo articolo qui..."></textarea>
+        </div>
+
+        <button id="submit-btn">Pubblica Post</button>
+        <button id="logout-btn" style="background: #ff4747; margin-top: 20px;">Sconnettiti</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
